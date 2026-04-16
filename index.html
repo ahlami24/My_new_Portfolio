@@ -17,33 +17,24 @@
   </head>
 
   <body>
+    <!-- 🔥 SCROLL PROGRESS BAR -->
+    <div class="scroll-bar"></div>
+
     <!-- ================= NAVBAR ================= -->
     <header>
       <nav class="navbar">
-        <!-- LOGO -->
         <div class="logo">
           <img src="assets/images/log.png" alt="AN Logo" />
         </div>
 
-        <!-- NAV LINKS -->
         <ul class="nav-links">
-          <li>
-            <a href="#about"><i class="fas fa-user"></i> About</a>
-          </li>
-          <li>
-            <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-          </li>
-          <li>
-            <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <!-- ACTIONS (RIGHT SIDE) -->
         <div class="nav-actions">
-          <!-- COLOR SWITCHER -->
           <div class="color-switcher">
             <span class="color-btn" data-color="#38bdf8"></span>
             <span class="color-btn" data-color="#f43f5e"></span>
@@ -51,7 +42,6 @@
             <span class="color-btn" data-color="#facc15"></span>
           </div>
 
-          <!-- MENU BUTTON -->
           <div class="menu-toggle" id="menu-toggle">☰</div>
         </div>
       </nav>
@@ -60,26 +50,35 @@
     <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="hero-container">
-        <div class="hero-text">
-          <h1>Hi, I'm Abdulaziz</h1>
+        <div class="hero-text reveal">
+          <h1>Hi, I'm <span>Abdulaziz</span></h1>
           <h3><span id="typing"></span></h3>
 
           <p>
-            I build fast, responsive, and user-friendly web applications.
-            Currently focused on frontend development while growing my skills in
-            data science.
+            I build modern, high-performance web applications with clean UI and
+            great user experience. Currently focused on frontend development and
+            growing into data science.
           </p>
 
-          <a href="#projects" class="btn">View Projects</a>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+          </div>
         </div>
-        <div class="hero-image">
-          <img src="assets/images/profile1.png" alt="profile" />
+
+        <div class="hero-visual reveal">
+          <div class="glow"></div>
+          <div class="circle"></div>
+
+          <div class="image-wrapper">
+            <img src="assets/images/profile1.png" alt="profile" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ================= ABOUT ================= -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <h2>About Me</h2>
       <p>
         I'm a Software Engineering student at ASTU with strong foundations in
@@ -90,86 +89,165 @@
 
     <!-- ================= SKILLS ================= -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <h2 class="reveal">Skills</h2>
 
-      <div class="skills-container">
-        <div class="card"><i class="fab fa-python"></i> Python</div>
-        <div class="card"><i class="fab fa-java"></i> Java</div>
-        <div class="card"><i class="fas fa-code"></i> C++</div>
-        <div class="card"><i class="fab fa-html5"></i> HTML</div>
-        <div class="card"><i class="fab fa-css3-alt"></i> CSS</div>
-        <div class="card"><i class="fab fa-js"></i> JavaScript</div>
-        <div class="card"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-        <div class="card"><i class="fas fa-database"></i> MySQL</div>
-        <div class="card"><i class="fas fa-chart-line"></i> Pandas</div>
-        <div class="card"><i class="fas fa-calculator"></i> NumPy</div>
-        <div class="card"><i class="fas fa-chart-bar"></i> Matplotlib</div>
+      <div class="skills-wrapper">
+        <!-- FRONTEND -->
+        <div class="skill-group reveal">
+          <h3>Frontend</h3>
+
+          <div class="skill">
+            <span>HTML</span>
+            <div class="bar">
+              <div class="progress" data-width="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>CSS</span>
+            <div class="bar">
+              <div class="progress" data-width="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar">
+              <div class="progress" data-width="80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BACKEND -->
+        <div class="skill-group reveal">
+          <h3>Backend</h3>
+
+          <div class="skill">
+            <span>MySQL</span>
+            <div class="bar">
+              <div class="progress" data-width="70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DATA & TOOLS -->
+        <div class="skill-group reveal">
+          <h3>Data & Tools</h3>
+
+          <div class="skill">
+            <span>Python</span>
+            <div class="bar">
+              <div class="progress" data-width="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>Pandas</span>
+            <div class="bar">
+              <div class="progress" data-width="65%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>NumPy</span>
+            <div class="bar">
+              <div class="progress" data-width="60%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>Matplotlib</span>
+            <div class="bar">
+              <div class="progress" data-width="50%"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ================= PROJECTS ================= -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <h2 class="reveal">Projects</h2>
 
       <div class="projects-container">
-        <div class="project-card">
-          <h3><i class="fas fa-graduation-cap"></i> DHO Website</h3>
-          <p>A responsive educational NGO website with modern UI.</p>
-          <div class="project-links">
-            <a href="https://tubular-mochi-6a025d.netlify.app/"
-              ><i class="fas fa-external-link-alt"></i> Live</a
-            >
-            <a href="https://github.com/ahlami24/DHO_website"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+        <!-- PROJECT -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project1.png" alt="project" />
+          </div>
+
+          <div class="project-content">
+            <h3>DHO Website</h3>
+            <p>Responsive NGO platform with modern UI and accessibility.</p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://tubular-mochi-6a025d.netlify.app/">Live</a>
+              <a href="https://github.com/ahlami24/DHO_website">Code</a>
+            </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <h3>ASTU Smart Complaint System</h3>
-          <p>System for managing student complaints efficiently.</p>
-          <div class="project-links">
-            <a href="https://kaleidoscopic-llama-04e4a9.netlify.app/"
-              ><i class="fas fa-external-link-alt"></i> Live</a
-            >
-            <a href="https://github.com/ahlami24/Frontend-ASTU-Stem-project"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+        <!-- PROJECT -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project2.png" alt="project" />
+          </div>
+
+          <div class="project-content">
+            <h3>ASTU Complaint System</h3>
+            <p>Student complaint system with structured workflow.</p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://kaleidoscopic-llama-04e4a9.netlify.app/">Live</a>
+              <a href="https://github.com/ahlami24/Frontend-ASTU-Stem-project"
+                >Code</a
+              >
+            </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <h3>To-Do App</h3>
-          <p>Task manager built with JavaScript.</p>
-          <div class="project-links">
-            <a href="https://my-smart-todo-lis.netlify.app/"
-              ><i class="fas fa-external-link-alt"></i> Live</a
-            >
-            <a href="https://github.com/ahlami24/CSEC-bootcamp-4th-project"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+        <!-- PROJECT -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project3.png" alt="project" />
           </div>
-        </div>
 
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>My personal responsive portfolio.</p>
-          <div class="project-links">
-            <a href="https://ahlami24.github.io/portfolio/"
-              ><i class="fas fa-external-link-alt"></i> Live</a
-            >
-            <a href="https://github.com/ahlami24/portfolio"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+          <div class="project-content">
+            <h3>To-Do App</h3>
+            <p>Task manager with dynamic UI and local storage.</p>
+
+            <div class="tags">
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://my-smart-todo-lis.netlify.app/">Live</a>
+              <a href="https://github.com/ahlami24/CSEC-bootcamp-4th-project"
+                >Code</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <h2>Contact Me</h2>
       <p><i class="fas fa-envelope"></i> abdulaziz.afia7@gmail.com</p>
+
       <div class="socials">
         <a href="https://github.com/ahlami24"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/abdulaziz-dev1/"
