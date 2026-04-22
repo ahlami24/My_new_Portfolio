@@ -147,7 +147,7 @@ p {
   border-radius: 50%;
   cursor: pointer;
 
-  border: 2px solid #fff;
+  border: 0px solid #0d0303;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -503,6 +503,8 @@ p {
   );
   opacity: 0;
   transition: 0.5s;
+
+  pointer-events: none;
 }
 
 .project-card:hover::before {
@@ -558,6 +560,6 @@ p {
 footer {
   text-align: center;
   padding: 20px;
-  background: #020617;
+  background: #1a1d2b;
   margin-top: 40px;
 }
